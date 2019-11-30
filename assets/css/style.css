@@ -815,12 +815,12 @@ width: auto;
   background-color: #fff;
   border-radius: 50%;
   color: #313131;
-  position: relative;
+  /* position: absolute; */
   z-index: -1; }
   .video-play-btn:before {
     content: "";
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     left: 50%;
     top: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
@@ -3128,7 +3128,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-size: 30px;
   padding-left: 10px;
   padding-top: 2px;
-  margin-bottom: 36px; }
+  /* margin-bottom: 36px; */
+ }
   .intro-video-wrap .video-play-btn:before {
     background-color: #5369f0;
     width: 130px;
