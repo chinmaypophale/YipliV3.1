@@ -57,7 +57,7 @@
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 90vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -101,6 +101,15 @@ header .overlay {
   header video {
     display: none;
   }
+}
+
+.videoheading h1{
+  color: #ffffff;
+  font-size: 50px;
+line-height: 60px;
+font-weight: 600;
+/* margin-bottom: 40px; */
+letter-spacing: -2px;
 }
 
 
