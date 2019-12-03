@@ -3924,12 +3924,19 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .imagerender{
-  background-color: red;
-  height: 400px;
+  background-color: white;
+  height: auto;
   width: 100%;
 }
 .imagerender-1{
-  background-color: blue;
-  height: 400px;
+  background-color: grey ;
+  height: auto;
   width: 100%;
 }
+.zoom{
+  transition: transform .3s;
+}
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
