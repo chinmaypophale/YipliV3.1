@@ -3922,3 +3922,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .footer-area li{
   text-align: left;
 }
+
+.imagerender{
+  background-color: red;
+  height: 400px;
+  width: 100%;
+}
+.imagerender-1{
+  background-color: blue;
+  height: 400px;
+  width: 100%;
+}
