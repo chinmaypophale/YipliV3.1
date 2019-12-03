@@ -3929,7 +3929,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   width: 100%;
 }
 .imagerender-1{
-  background-color: grey ;
+  /* background-color: #efefef ; */
   height: auto;
   width: 100%;
 }
@@ -3940,3 +3940,25 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
+}
+
+  .logo-y{
+color: #009ee3;
+font-weight: bold;
+  }
+  .logo-i{
+color: #7c6eb0;
+font-weight: bold;
+  }
+  .logo-p{
+color: #f07c00;
+font-weight: bold;
+  }
+  .logo-l{
+color: #b00060;
+font-weight: bold;
+  }
+  .logo-i2{
+color: #aaaa00;
+font-weight: bold;
+  }
