@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<!-- Mirrored from irtech.biz/TF/prolandix/brolandix/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Sep 2019 09:15:58 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Brolandinx | Product Landing Page html Template </title>
+    <title> Yipli | Checkout Product Page</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- bootstrap -->
@@ -26,37 +24,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- angularJS -->
+    <script src="assets/js/angular.min.js"></script>
 </head>
 
+<script>
+    var app = angular.module("myApp", []);
+    app.controller('myController',function($scope){
+      $scope.qty=0;
+    });
+</script>
+
 <body>
-    <!-- search Popup -->
-        <div class="body-overlay" id="body-overlay"></div>
-        <div class="search-popup" id="search-popup">
-            <form action="https://irtech.biz/TF/prolandix/brolandix/index.html" class="search-popup-form">
-                <div class="form-element">
-                        <input type="text" class="input-field" placeholder="Search.....">
-                </div>
-                <button type="submit" class="submit-btn"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
-    <!-- //. search Popup -->
-
-<!-- preloader area start -->
-<!-- <div class="preloader" id="preloader">
-        <div class="preloader-inner">
-            <div class="cancel-preloader">
-                <a href="#">Cancel Preloader</a>
-            </div>
-            <div class="sk-folding-cube">
-                <div class="sk-cube1 sk-cube"></div>
-                <div class="sk-cube2 sk-cube"></div>
-                <div class="sk-cube4 sk-cube"></div>
-                <div class="sk-cube3 sk-cube"></div>
-            </div>
-        </div>
-    </div> -->
-    <!-- preloader area end -->
-
 
         <!-- navbar area start -->
         <nav class="navbar navbar-area navbar-expand-lg">
@@ -70,41 +49,24 @@
                     <!-- navbar collapse start -->
                     <ul class="navbar-nav" id="primary-menu">
                         <!-- navbar- nav -->
-                        <li class="nav-item active dropdown">
-                            <a class="nav-link pl-0 dropdown-toggle" data-toggle="dropdown" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a href="index.html" class="dropdown-item">Home 01</a>
-                                <a href="index-2.html" class="dropdown-item">Home 02</a>
-                                <a href="index-3.html" class="dropdown-item">Home 03</a>
-                                <a href="index-4.html" class="dropdown-item">Home 04</a>
-                            </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Mat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#games">Games</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#feature">Feature</a>
+                            <a class="nav-link" href="#feature">Live Classes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#product">Product</a>
+                            <a class="nav-link" href="faqs.html">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonial">Testimonial</a>
+                            <a class="nav-link" href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
                         </li>
-                        <li class="nav-item dropdown">
-                                <a class="nav-link pl-0 dropdown-toggle" data-toggle="dropdown" href="#">Blog
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="blog.html" class="dropdown-item">Blog</a>
-                                    <a href="blog-details.html" class="dropdown-item">Blog Details</a>
-                                </div>
-                            </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
+
+
                     </ul>
                     <!-- /.navbar-nav -->
                 </div>
@@ -116,23 +78,9 @@
                     </button>
                 </div>
                 <!-- navbar collapse end -->
-                <div class="nav-right-content">
-                    <ul>
-                        <li class="search" id="search">
-                            <i class="fas fa-search"></i>
-                        </li>
-                        <li class="cart" >
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
         <!-- navbar area end -->
-
-
-
-        <title>Checkout example for Bootstrap</title>
 
             <!-- Bootstrap core CSS -->
             <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -144,30 +92,38 @@
           <body class="bg-light">
 
             <div class="container">
+              <div ng-app="myApp" ng-controller="myController">
               <div class="py-5 text-center">
                 <!-- <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
                 <h2>Checkout Details</h2>
                 <!-- <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p> -->
               </div>
 
+
+
+
+
+
               <div class="row">
                 <div class="col-md-4 order-md-2 mb-4">
                   <h4 class="d-flex justify-content-between align-items-center mb-3">
                     <span class="text-muted">Your cart</span>
-                    <span class="badge badge-secondary badge-pill">2</span>
+                    <span class="badge badge-secondary badge-pill">{{qty}}</span>
                   </h4>
                   <ul class="list-group mb-3">
                     <li class="list-group-item d-flex justify-content-between lh-condensed">
                       <div>
-                        <h6 class="my-0">Product name</h6>
+                        <h6 class="my-0">Product Price</h6>
                         <small class="text-muted">Quantity</small>
                       </div>
-                      <span class="text-muted">Rs. 1280</span>
+                      <span class="text-muted">7000</span><br>
+                      <span class="text-muted">{{qty}}</span>
+
                     </li>
 
                     <li class="list-group-item d-flex justify-content-between">
                       <span>Total (INR)</span>
-                      <strong>Rs. 1280</strong>
+                      <strong>Rs. {{qty*7000}}</strong>
                     </li>
                   </ul>
 
@@ -206,14 +162,18 @@
 
                     <div class="row">
                       <div class="col-md-6 mb-3">
-                        <label for="qty">Quantity</label>
-                        <input type="number" class="form-control" id="qty" name="qty" placeholder="" value="" required>
+                          <label for="qty">Quantity</label>
+
+                            <input type="number" class="form-control" placeholder="0" ng-model="qty" required>
+
                         <div class="invalid-feedback">
                           Valid first name is required.
                         </div>
                       </div>
 
                     </div>
+
+
 
                    <!--  <div class="mb-3">
                       <label for="username">Username</label>
@@ -355,6 +315,8 @@
                     <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
                   </form>
                 </div>
+
+              </div>
               </div>
 
               <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -427,6 +389,7 @@
         <!-- footer area end -->
 
 
+
             <!-- jquery -->
             <script src="assets/js/jquery.js"></script>
             <!-- popper -->
@@ -450,5 +413,6 @@
         </body>
 
 
-        <!-- Mirrored from irtech.biz/TF/prolandix/brolandix/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Sep 2019 09:17:25 GMT -->
-        </html>
+
+
+  </html>
