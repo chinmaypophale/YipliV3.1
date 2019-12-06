@@ -1,7 +1,7 @@
 <?php
-$product_name = $_POST["product_name"];
-$name = $_POST["name"];
-$phone = $_POST["phone"];
+$product_name = "Yipli";
+$name = "Fitmat Smart Solutions";
+$phone = $_POST["mobileno"];
 $email = $_POST["email"];
 $address = $_POST["address"];
 $address2 = $_POST["address2"];
@@ -9,15 +9,14 @@ $zip = $_POST["zip"];
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
 $qty = $_POST["qty"];
-$mobileno = $_POST["mobileno"];
-$price = qty * 1200;
+$price = $qty * 7000;
 
 
 include 'src/instamojo.php';
 
 // --------------------paste private key and auth -----------------------
 
-$api = new Instamojo\Instamojo('test_970d7fe71401265cfc5cab91101', 'test_4a49447946d2ca6088fb5410778','https://test.instamojo.com/api/1.1/');
+$api = new Instamojo\Instamojo('test_d55d253d8863880dcd6d9bf4dcd', 'test_69b53826a51744eaf753256859a','https://test.instamojo.com/api/1.1/');
 
 
 try {
@@ -30,8 +29,8 @@ try {
         "send_sms" => true,
         "email" => $email,
         'allow_repeated_payments' => false,
-        "redirect_url" => "http://dexterlabs.co.in/checkrahul/thankyou.php",
-        "webhook" => "http://dexterlabs.co.in/checkrahul/webhook.php"
+        "redirect_url" => "http://playyipli.com/thankyou.php",
+        "webhook" => "http://playyipli.com/webhook.php"
         ));
     //print_r($response);
 

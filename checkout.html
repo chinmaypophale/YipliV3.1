@@ -144,6 +144,7 @@
                   <form class="needs-validation" novalidate action="pay.php" method="post">
                     <!-- firstname  lastname  qty  mobileno -->
                     <div class="row">
+                      <!-- firstname -->
                       <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
                         <input type="text" class="form-control" id="firstName" name="firstname" placeholder="" value="" required>
@@ -151,6 +152,7 @@
                           Valid first name is required.
                         </div>
                       </div>
+                      <!-- lastname -->
                       <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
                         <input type="text" class="form-control" id="lastName" name="lastname" placeholder="" value="" required>
@@ -164,7 +166,7 @@
                       <div class="col-md-6 mb-3">
                           <label for="qty">Quantity</label>
 
-                            <input type="number" class="form-control" placeholder="0" ng-model="qty" required>
+                            <input type="number" class="form-control" id="qty" name="qty" placeholder="0" ng-model="qty" required>
 
                         <div class="invalid-feedback">
                           Valid first name is required.

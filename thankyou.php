@@ -29,14 +29,14 @@
         <p class="lead">A test payment integration for instamojo paypemnt gateway. Written in PHP</p>
       </div>
 
-      <h3 style="color:#6da552">Thank You, Payment succus!!</h3>
+      <h3 style="color:#6da552">Thank You, Payment success!!</h3>
 
 
  <?php
 
 include 'src/instamojo.php';
 
-$api = new Instamojo\Instamojo('test_970d7fe71401265cfc5cab91101', 'test_4a49447946d2ca6088fb5410778','https://test.instamojo.com/api/1.1/');
+$api = new Instamojo\Instamojo('test_d55d253d8863880dcd6d9bf4dcd', 'test_69b53826a51744eaf753256859a','https://test.instamojo.com/api/1.1/');
 
 $payid = $_GET["payment_request_id"];
 
