@@ -3964,3 +3964,8 @@ font-weight: bold;
 color: #aaaa00;
 font-weight: bold;
   }
+
+.bottom-navbar a{
+  
+  padding: 10px;
+}
