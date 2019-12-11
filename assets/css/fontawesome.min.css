@@ -1879,6 +1879,10 @@
     content: "\f11b"
 }
 
+.fa-running:before {
+  content: "\f70c"
+}
+
 .fa-gamepad-alt::before{
   content: "\f8bc"
 }
