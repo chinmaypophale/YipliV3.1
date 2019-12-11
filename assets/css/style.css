@@ -3092,8 +3092,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -ms-flex: 1;
     flex: 1; }
     .single-block-feature .content .title {
-      font-size: 24px;
-      font-weight: 600;
+
+      /* Orignally font size 24px and font weight 600 */
+      font-size: 20px;
+      font-weight: 300;
       margin-bottom: 15px;
       -webkit-transition: all 0.3s ease-in;
       -moz-transition: all 0.3s ease-in;
@@ -3966,6 +3968,6 @@ font-weight: bold;
   }
 
 .bottom-navbar a{
-  
+
   padding: 10px;
 }
