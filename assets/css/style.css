@@ -3937,7 +3937,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .imagerender{
-  background-color: white;
+  /* background-color: white; */
+  background: transparent;
   height: auto;
   width: 100%;
 }
@@ -3979,4 +3980,14 @@ font-weight: bold;
 .bottom-navbar a{
 
   padding: 10px;
+}
+
+.bg-orange{
+  /* background-color: #f200ff ;
+   */
+   background-color: #E61931 ;
+
+}
+.bg-orange a{
+  color: #ffffff !important;
 }
