@@ -4015,3 +4015,8 @@ font-weight: bold;
 .bg-orange a{
   color: #ffffff !important;
 }
+
+.knowcenter{
+  text-align:center;
+  vertical-align: middle;
+}
