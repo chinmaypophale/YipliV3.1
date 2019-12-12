@@ -679,6 +679,15 @@ width: auto;
     text-transform: capitalize;
     position: relative; }
 
+    .featuresofyipli h4{
+      font-size: 26px !important;
+      line-height: 30px !important;
+      margin-bottom: 12px;
+      color: #3c3954;
+      font-weight: 300 !important;
+      text-transform: none !important;
+      position: relative; }
+
 .c-white {
   color: #fff; }
 
