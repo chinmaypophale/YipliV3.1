@@ -2753,7 +2753,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-size: 48px;
   line-height: 58px;
   font-weight: 600;
-  margin-bottom: 56px; }
+
+  /* margin-bottom: 56px; */
+ }
 
 .list-feature-wrap.white ul li .single-list-feature-item:hover .icon {
   -ms-transform: rotateY(360deg);
@@ -3968,7 +3970,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .imagerender-1{
   /* background-color: #efefef ; */
-  height: auto;
+  /* height: auto; */
   width: 100%;
 }
 .zoom{
@@ -4020,3 +4022,9 @@ font-weight: bold;
   text-align:center;
   vertical-align: middle;
 }
+
+.sep-bg-text{
+  background-image: url(../img/sep-5.png);
+  background-size: cover;
+  background-position: left;
+ }
