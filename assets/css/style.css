@@ -1880,7 +1880,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
           margin-top: 5px; }
   .header-area .header-area-inner {
     position: relative;
-    padding: 245px 0 140px 0;
+    padding: 50px 0 400px 0;
     z-index: 3; }
     .header-area .header-area-inner .title {
       font-size: 72px;
@@ -1912,7 +1912,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .header-area .header-right-image {
     position: absolute;
     right: 5%;
-    top: 110px; }
+    top: 0px;
+  }
 
 .right-image-with-price {
   display: inline-block;
@@ -4028,4 +4029,3 @@ font-weight: bold;
   background-size: cover;
   background-position: left;
  }
- 
