@@ -698,7 +698,7 @@ width: auto;
   .section-title .title {
     font-size: 46px;
     line-height: 56px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     color: #3c3954;
     font-weight: 600;
     text-transform: capitalize;
@@ -1504,7 +1504,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -moz-transition: 0.5s ease-in;
     -o-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.5);
     background-color: #fff; }
     .navbar-area.nav-fixed .navbar-collapse .navbar-nav .nav-item:hover .dropdown-menu {
       -webkit-transition: all 0.3s ease-in;
