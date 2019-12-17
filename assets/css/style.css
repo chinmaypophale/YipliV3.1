@@ -638,7 +638,8 @@ width: auto;
     padding: 0 40px; }
 
 .section-title {
-  margin-bottom: 55px; }
+  /* margin-bottom: 55px; */
+ }
   .section-title.no-margin {
     margin-bottom: 0; }
   .section-title.left-aligned {
@@ -3212,7 +3213,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: inline-block;
   /* -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12); */
-  margin-bottom: 30px; }
+  /* margin-bottom: 30px; */
+ }
   .single-product-item:hover .content .title a {
     color: #5369f0; }
   .single-product-item .content {
@@ -3230,7 +3232,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         .single-product-item .content .title a:hover {
           color: #5369f0; }
     .single-product-item .content .price-wrap {
-      font-weight: 600;
+      /* font-weight: 600; */
       font-size: 16px;
       margin-bottom: 25px; }
       .single-product-item .content .price-wrap .price {
@@ -3985,23 +3987,23 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
   .logo-y{
 color: #009ee3;
-font-weight: bold;
+/* font-weight: bold; */
   }
   .logo-i{
 color: #7c6eb0;
-font-weight: bold;
+/* font-weight: bold; */
   }
   .logo-p{
 color: #f07c00;
-font-weight: bold;
+/* font-weight: bold; */
   }
   .logo-l{
 color: #b00060;
-font-weight: bold;
+/* font-weight: bold; */
   }
   .logo-i2{
 color: #aaaa00;
-font-weight: bold;
+/* font-weight: bold; */
   }
 
 .bottom-navbar a{
